@@ -1,0 +1,36 @@
+$primary-color: #007bff;
+$font-size-medium: 16px;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conteiner {
+    display: flex;
+  
+    .item {
+      margin-right: 10px;
+  
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  $container-width: 960px;
+$sidebar-width: 240px;
+
+.content {
+  width: $container-width - $sidebar-width;
+}
+
+.btn {
+    padding: 10px;
+  }
+  
+  .submit-btn {
+    @extend .btn;
+    background-color: #007bff;
+  }
